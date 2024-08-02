@@ -1,0 +1,26 @@
+{
+  "name": "prisma-multiple-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma:generate:cms": "prisma generate --schema prisma\\cms-schema.prisma",
+    "prisma:generate:qna": "prisma generate --schema prisma\\qna-schema.prisma",
+    "prisma:generate:all": "npm run prisma:generate:cms && npm run prisma:generate:qna",
+    "start": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@types/node": "^22.0.2",
+    "prisma": "^5.17.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.17.0"
+  }
+}
