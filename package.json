@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prisma:generate:cms": "prisma generate --schema prisma\\cms-schema.prisma",
-    "prisma:generate:qna": "prisma generate --schema prisma\\qna-schema.prisma",
+    "prisma:generate:cms": "prisma generate --schema prisma/cms-schema.prisma",
+    "prisma:generate:qna": "prisma generate --schema prisma/qna-schema.prisma",
     "prisma:generate:all": "npm run prisma:generate:cms && npm run prisma:generate:qna",
     "start": "ts-node src/index.ts"
   },
